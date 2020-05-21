@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Division Only Calculator</title>
     <!-- Bootstrap CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Fontawesome -->
-
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Adding JS to our page -->
     <!-- Embedded
     Adding JS directly through the script tag
@@ -26,11 +27,11 @@
   </head>
   <body>
 
-    <div class="">
+    <div class="container">
 
-      <div class="">
+      <div class="row">
 
-        <div class="">
+        <div class="col-md-8">
           <br>
           <!-- let us add an alert here -->
           <div class="alert alert-secondary" role="alert">
@@ -40,27 +41,27 @@
           <!-- we need two form inputs -->
           <div class="" id="num1Div">
             <label for="num1">First Number</label>
-            <input type="number" name="num1" id="num1" value="" class="">
-            <span style='display:none;' id="num1Error" class="text-danger"> <i class=" "></i> </span>
+            <input required type="number" name="num1" id="num1" value="" class="form-control">
+            <span style='display:none;' id="num1Error" class="text-danger"> <i class="fas fa-bomb"></i> </span>
           </div>
 
           <div class="">
             <label for="num2">Second Number</label>
-            <input type="number" name="num2" id="num2" value="" class="">
-            <span style='display:none;' id="num2Error" class="text-danger"> <i class=" "></i> </span>
+            <input required type="number" name="num2" id="num2" value="" class="form-control">
+            <span style='display:none;' id="num2Error" class="text-danger"> <i class="fas fa-bomb"></i> </span>
           </div>
-
-          <button id="divide-them" class="" name="divide-them" type="button" name="button">
-           <i class=" "></i>  Divide Them!
+            <br/>
+          <button id="divide-them" class="form-control btn btn-primary" name="divide-them" type="button" name="button" onclick"divideThem();">
+           <i class="fas fa-divide"></i>  Divide Them!
           </button>
         </div>
 
-        <div class="">
+        <div class="col-md-4">
           <br>
-          <div class="" role="alert">
-           <i class=""></i>  Results
+          <div class="alert alert-success" role="alert">
+           <i class="fas fa-smile"></i>  Results
           </div>
-          <h4 class='' id="results"></h4>
+          <h4 class='text-primary' id="results"></h4>
         </div>
 
       </div>
@@ -69,6 +70,7 @@
 
 
     <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
     <!-- Font awesome -->
 
 
