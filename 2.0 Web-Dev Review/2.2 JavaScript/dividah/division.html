@@ -12,6 +12,7 @@
     Adding JS directly through the script tag
   -->
     <script type="text/javascript">
+      //alert('Niko hapa');
     </script>
     <!-- External
     Adding JS using an external script sheet through the script tag
@@ -26,6 +27,8 @@
 
   </head>
   <body>
+    <!-- We will create a simple page that allows us to divide two numbers -->
+    <!-- Let us create the markup first -->
 
     <div class="container">
 
@@ -39,25 +42,47 @@
           </div>
 
           <!-- we need two form inputs -->
-          <div class="" id="num1Div">
+          <div class="form-group" id="num1Div">
             <label for="num1">First Number</label>
+<<<<<<< HEAD
             <input required type="number" name="num1" id="num1" value="" class="form-control">
+=======
+            <!-- let us limit the input to numbers only-->
+            <!-- HTML 5 types -->
+            <!-- Nice...notice that we cannot even type non numerical stuff -->
+
+            <!-- except e :) because you can exponents in numbers 2e12 -->
+            <input type="number" name="num1" id="num1" value="" class="form-control">
+>>>>>>> b2c72d8b391d5160f6616ff988e5264b46865c83
             <span style='display:none;' id="num1Error" class="text-danger"> <i class="fas fa-bomb"></i> </span>
           </div>
 
-          <div class="">
+          <div class="form-group">
             <label for="num2">Second Number</label>
+<<<<<<< HEAD
             <input required type="number" name="num2" id="num2" value="" class="form-control">
             <span style='display:none;' id="num2Error" class="text-danger"> <i class="fas fa-bomb"></i> </span>
           </div>
             <br/>
           <button id="divide-them" class="form-control btn btn-primary" name="divide-them" type="button" name="button" onclick"divideThem();">
            <i class="fas fa-divide"></i>  Divide Them!
+=======
+            <input type="number" name="num2" id="num2" value="" class="form-control">
+            <span style='display:none;' id="num2Error" class="text-danger"> <i class="fas fa-bomb"></i> </span>
+          </div>
+
+          <button id="divide-them" class="btn btn-primary" name="divide-them" type="button" name="button" onclick="divideThem()">
+           <i class="fa fa-divide"></i>  Divide Them!
+>>>>>>> b2c72d8b391d5160f6616ff988e5264b46865c83
           </button>
         </div>
 
         <div class="col-md-4">
+<<<<<<< HEAD
           <br>
+=======
+          <br> <!-- this is a bad way to do it --add some css :) -->
+>>>>>>> b2c72d8b391d5160f6616ff988e5264b46865c83
           <div class="alert alert-success" role="alert">
            <i class="fas fa-smile"></i>  Results
           </div>
@@ -69,11 +94,21 @@
     </div>
 
 
+    <!-- We can use bootstrap :) -->
     <!-- Bootstrap JS -->
+<<<<<<< HEAD
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+=======
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" charset="utf-8"></script>
+>>>>>>> b2c72d8b391d5160f6616ff988e5264b46865c83
     <!-- Font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
 
 
+    <!-- Notice that the popup alert is now displayed after the HTML is loaded...
+    Observe carefully...
+  -->
     <script src="division.js" charset="utf-8"></script>
+    <!-- So generally we place the JS before the end of the body -->
   </body>
 </html>
